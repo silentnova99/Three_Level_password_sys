@@ -165,16 +165,16 @@ Visit `http://localhost:5000` in your browser.
 ## Screenshots
 
 ### Level 1 - Login
-![Level 1 Login](screenshots/level1.png)
+![Level 1 Login](C:\Users\diwan\Pictures\Screenshots\Screenshot 2025-12-02 103142.png)
 
 ### Level 2 - OTP Verification
-![Level 2 OTP](screenshots/level2.png)
+![Level 2 OTP](C:\Users\diwan\Pictures\Screenshots\Screenshot 2025-12-02 103252.png)
 
 ### Level 3 - QR Code
-![Level 3 QR](screenshots/level3.png)
+![Level 3 QR](C:\Users\diwan\Pictures\Screenshots\Screenshot 2025-12-02 103347.png)
 
 ### Dashboard
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](C:\Users\diwan\Pictures\Screenshots\Screenshot 2025-12-02 103529.png)
 
 ## Troubleshooting
 
