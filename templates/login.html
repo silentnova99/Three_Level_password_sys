@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Level 1: Enter Password</h2>
+<form method="post">
+    <label>Username</label>
+    <input type="text" name="username" required>
+
+    <label>Password</label>
+    <input type="password" name="password" required>
+
+    <button type="submit">Next</button>
+</form>
+<div class="link">
+    New user? <a href="{{ url_for('register') }}">Register here</a>
+</div>
+{% if error %}<p class="msg-error">{{ error }}</p>{% endif %}
+{% endblock %}

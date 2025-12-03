@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Access Granted</h2>
+<p>Welcome, {{ username }}!</p>
+<a href="{{ url_for('logout') }}">Logout</a>
+{% endblock %}

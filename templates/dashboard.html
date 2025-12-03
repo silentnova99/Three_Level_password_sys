@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block content %}
+<div style="text-align: center;">
+    <div style="font-size: 60px; margin: 20px 0;">🔐</div>
+    <h2>Welcome, {{ username }} !</h2>
+    <p style="font-size: 16px; margin: 15px 0;">
+        Three-Level Security: <span style="color: green; font-weight: bold;">Enabled</span>
+    </p>
+    
+    <div style="display: flex; justify-content: center; gap: 30px; margin: 30px 0;">
+        <div style="text-align: center;">
+            <div style="font-size: 40px;">🔒</div>
+            <p>Password</p>
+            <p style="font-size: 20px; color: green;">✓</p>
+        </div>
+        <div style="text-align: center;">
+            <div style="font-size: 40px;">📧</div>
+            <p>Email OTP</p>
+            <p style="font-size: 20px; color: green;">✓</p>
+        </div>
+        <div style="text-align: center;">
+            <div style="font-size: 40px;">📱</div>
+            <p>QR Code</p>
+            <p style="font-size: 20px; color: green;">✓</p>
+        </div>
+    </div>
+
+    <div style="border: 2px solid #dc2626; border-radius: 12px; padding: 20px; margin: 30px auto; max-width: 400px; background: #fee2e2;">
+        <div style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 15px;">
+            <span style="font-size: 24px;">🔐</span>
+            <span style="color: #dc2626; font-weight: bold; font-size: 16px;">Sensitive Account Data</span>
+        </div>
+        
+        <div style="text-align: left; background: white; padding: 15px; border-radius: 8px;">
+            <p style="margin: 8px 0; text-align: left;">
+                <span style="color: #64748b;">Username:</span> 
+                <strong>{{ username }}</strong>
+            </p>
+            <p style="margin: 8px 0; text-align: left;">
+                <span style="color: #64748b;">Email:</span> 
+                <span style="background: #fee2e2; color: #b91c1c; padding: 2px 8px; border-radius: 4px;">{{ email }}</span>
+            </p>
+            <p style="margin: 8px 0; text-align: left;">
+                <span style="color: #64748b;">Password:</span> 
+                <strong>•••••••••• (protected)</strong>
+            </p>
+        </div>
+
+        <p style="color: #991b1b; font-weight: bold; margin-top: 12px; font-size: 13px;">
+            ⚠️ Warning: This section contains sensitive account data. Do not share with anyone.
+        </p>
+    </div>
+
+    <a href="{{ url_for('logout') }}" style="display: inline-block; background: #dc2626; color: white; padding: 12px 40px; border-radius: 25px; text-decoration: none; font-weight: bold; font-size: 16px; margin-top: 20px;">
+        🚪 Logout
+    </a>
+</div>
+{% endblock %}
